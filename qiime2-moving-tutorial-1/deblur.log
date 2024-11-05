@@ -1,0 +1,370 @@
+INFO(139699011319616)2024-11-05 14:14:32,894:*************************
+INFO(139699011319616)2024-11-05 14:14:32,894:deblurring started
+WARNING(139699011319616)2024-11-05 14:14:32,894:deblur version 1.1.1 workflow started on /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data
+WARNING(139699011319616)2024-11-05 14:14:32,894:parameters: {'seqs_fp': '/tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data', 'output_dir': '/tmp/tmpcc3msvj0', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 120, 'left_trim_length': 0, 'min_reads': 10, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/home/lulu/Qiime_practice/qiime2-moving-tutorial-1/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(139699011319616)2024-11-05 14:14:32,894:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139699011319616)2024-11-05 14:14:32,894:deblur main program started
+INFO(139699011319616)2024-11-05 14:14:32,894:processing directory /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data
+INFO(139699011319616)2024-11-05 14:14:32,895:building negative db sortmerna index files
+INFO(139699011319616)2024-11-05 14:14:32,895:build_index_sortmerna files ['/home/lulu/miniconda3/envs/qiime2-amplicon-2024.5/lib/python3.9/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:14:32,931:building positive db sortmerna index files
+INFO(139699011319616)2024-11-05 14:14:32,931:build_index_sortmerna files ['/home/lulu/miniconda3/envs/qiime2-amplicon-2024.5/lib/python3.9/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:21,204:processing per sample fasta files
+INFO(139699011319616)2024-11-05 14:15:21,204:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:21,204:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L3S360_20_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:21,358:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S360_20_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:21,374:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S360_20_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:21,720:total sequences 119, passing sequences 119, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:21,720:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S360_20_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:23,436:deblurring 119 sequences
+INFO(139699011319616)2024-11-05 14:15:23,460:112 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:23,461:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S360_20_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:23,482:finished processing file
+INFO(139699011319616)2024-11-05 14:15:23,483:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:23,483:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L4S137_23_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:24,979:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S137_23_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:24,991:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S137_23_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:25,400:total sequences 503, passing sequences 503, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:25,400:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S137_23_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:25,866:deblurring 503 sequences
+INFO(139699011319616)2024-11-05 14:15:25,998:242 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:25,999:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S137_23_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:26,031:finished processing file
+INFO(139699011319616)2024-11-05 14:15:26,032:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:26,032:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L5S174_27_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:26,270:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S174_27_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:26,275:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S174_27_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:26,581:total sequences 87, passing sequences 87, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:26,581:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S174_27_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:27,414:deblurring 87 sequences
+INFO(139699011319616)2024-11-05 14:15:27,420:41 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:27,420:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S174_27_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:27,428:finished processing file
+INFO(139699011319616)2024-11-05 14:15:27,429:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:27,429:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L1S257_3_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:28,233:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S257_3_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:28,240:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S257_3_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:28,594:total sequences 363, passing sequences 363, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:28,594:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S257_3_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:30,609:deblurring 363 sequences
+INFO(139699011319616)2024-11-05 14:15:30,675:137 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:30,676:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S257_3_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:30,703:finished processing file
+INFO(139699011319616)2024-11-05 14:15:30,704:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:30,704:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L3S341_19_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:30,848:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S341_19_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:30,852:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S341_19_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:31,198:total sequences 95, passing sequences 95, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:31,198:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S341_19_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:32,147:deblurring 95 sequences
+INFO(139699011319616)2024-11-05 14:15:32,155:86 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:32,155:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S341_19_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:32,168:finished processing file
+INFO(139699011319616)2024-11-05 14:15:32,168:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:32,168:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L3S242_16_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:32,286:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S242_16_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:32,290:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S242_16_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:32,650:total sequences 50, passing sequences 50, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:32,650:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S242_16_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:32,957:deblurring 50 sequences
+INFO(139699011319616)2024-11-05 14:15:32,959:32 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:32,959:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S242_16_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:32,967:finished processing file
+INFO(139699011319616)2024-11-05 14:15:32,967:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:32,967:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L1S8_7_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:33,908:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S8_7_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:33,916:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S8_7_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:34,247:total sequences 393, passing sequences 393, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:34,247:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S8_7_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:37,652:deblurring 393 sequences
+INFO(139699011319616)2024-11-05 14:15:37,692:70 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:37,693:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S8_7_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:37,708:finished processing file
+INFO(139699011319616)2024-11-05 14:15:37,709:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:37,709:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L4S63_24_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:38,979:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S63_24_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:38,989:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S63_24_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:39,337:total sequences 691, passing sequences 691, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:39,337:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S63_24_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:40,020:deblurring 691 sequences
+INFO(139699011319616)2024-11-05 14:15:40,385:468 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:40,387:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S63_24_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:40,450:finished processing file
+INFO(139699011319616)2024-11-05 14:15:40,451:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:40,451:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L3S313_18_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:40,601:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S313_18_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:40,606:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S313_18_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:40,975:total sequences 85, passing sequences 85, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:40,975:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S313_18_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:41,753:deblurring 85 sequences
+INFO(139699011319616)2024-11-05 14:15:41,759:69 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:41,760:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S313_18_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:41,771:finished processing file
+INFO(139699011319616)2024-11-05 14:15:41,771:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:41,771:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L6S93_33_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:42,722:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S93_33_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:42,730:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S93_33_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:43,092:total sequences 268, passing sequences 268, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:43,092:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S93_33_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:44,215:deblurring 268 sequences
+INFO(139699011319616)2024-11-05 14:15:44,244:76 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:44,245:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S93_33_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:44,258:finished processing file
+INFO(139699011319616)2024-11-05 14:15:44,258:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:44,258:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L5S240_30_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:44,478:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S240_30_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:44,483:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S240_30_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:44,832:total sequences 71, passing sequences 71, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:44,833:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S240_30_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:45,543:deblurring 71 sequences
+INFO(139699011319616)2024-11-05 14:15:45,546:29 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:45,546:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S240_30_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:45,554:finished processing file
+INFO(139699011319616)2024-11-05 14:15:45,554:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:45,554:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L5S222_29_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:45,871:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S222_29_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:45,876:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S222_29_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:46,246:total sequences 100, passing sequences 100, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:46,246:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S222_29_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:47,305:deblurring 100 sequences
+INFO(139699011319616)2024-11-05 14:15:47,310:37 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:47,310:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S222_29_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:47,318:finished processing file
+INFO(139699011319616)2024-11-05 14:15:47,319:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:47,319:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L3S378_21_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:47,499:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S378_21_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:47,505:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S378_21_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:47,861:total sequences 80, passing sequences 80, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:47,861:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S378_21_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:48,508:deblurring 80 sequences
+INFO(139699011319616)2024-11-05 14:15:48,513:52 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:48,514:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S378_21_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:48,525:finished processing file
+INFO(139699011319616)2024-11-05 14:15:48,525:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:48,525:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L3S294_17_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:48,686:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S294_17_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:48,691:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S294_17_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:49,026:total sequences 82, passing sequences 82, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:49,026:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S294_17_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:49,768:deblurring 82 sequences
+INFO(139699011319616)2024-11-05 14:15:49,775:65 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:49,775:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L3S294_17_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:49,788:finished processing file
+INFO(139699011319616)2024-11-05 14:15:49,788:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:49,788:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L2S155_8_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:50,360:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S155_8_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:50,366:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S155_8_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:50,751:total sequences 260, passing sequences 260, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:50,751:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S155_8_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:52,339:deblurring 260 sequences
+INFO(139699011319616)2024-11-05 14:15:52,398:178 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:52,399:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S155_8_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:52,428:finished processing file
+INFO(139699011319616)2024-11-05 14:15:52,429:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:52,429:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L2S382_15_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:53,104:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S382_15_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:53,111:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S382_15_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:53,481:total sequences 261, passing sequences 261, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:53,481:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S382_15_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:54,804:deblurring 261 sequences
+INFO(139699011319616)2024-11-05 14:15:54,858:200 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:15:54,859:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S382_15_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:15:54,892:finished processing file
+INFO(139699011319616)2024-11-05 14:15:54,893:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:15:54,893:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L1S208_2_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:15:56,156:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S208_2_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:15:56,165:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S208_2_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:15:56,526:total sequences 477, passing sequences 477, failing sequences 0
+INFO(139699011319616)2024-11-05 14:15:56,527:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S208_2_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:15:59,933:deblurring 477 sequences
+INFO(139699011319616)2024-11-05 14:16:00,030:149 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:00,030:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S208_2_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:00,060:finished processing file
+INFO(139699011319616)2024-11-05 14:16:00,060:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:00,060:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L6S68_32_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:00,882:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S68_32_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:00,889:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S68_32_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:01,272:total sequences 249, passing sequences 249, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:01,272:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S68_32_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:02,603:deblurring 249 sequences
+INFO(139699011319616)2024-11-05 14:16:02,619:61 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:02,619:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S68_32_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:02,631:finished processing file
+INFO(139699011319616)2024-11-05 14:16:02,631:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:02,631:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L4S112_22_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:03,765:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S112_22_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:03,775:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S112_22_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:04,129:total sequences 510, passing sequences 510, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:04,130:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S112_22_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:04,562:deblurring 510 sequences
+INFO(139699011319616)2024-11-05 14:16:04,724:282 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:04,725:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L4S112_22_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:04,763:finished processing file
+INFO(139699011319616)2024-11-05 14:16:04,763:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:04,763:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L1S105_0_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:05,832:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S105_0_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:05,841:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S105_0_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:06,188:total sequences 484, passing sequences 484, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:06,188:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S105_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:10,052:deblurring 484 sequences
+INFO(139699011319616)2024-11-05 14:16:10,116:111 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:10,116:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S105_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:10,135:finished processing file
+INFO(139699011319616)2024-11-05 14:16:10,135:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:10,135:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L5S203_28_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:10,407:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S203_28_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:10,412:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S203_28_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:10,778:total sequences 90, passing sequences 90, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:10,778:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S203_28_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:11,639:deblurring 90 sequences
+INFO(139699011319616)2024-11-05 14:16:11,644:42 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:11,644:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S203_28_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:11,653:finished processing file
+INFO(139699011319616)2024-11-05 14:16:11,653:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:11,653:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L1S140_1_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:12,618:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S140_1_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:12,627:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S140_1_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:12,972:total sequences 421, passing sequences 421, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:12,972:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S140_1_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:16,333:deblurring 421 sequences
+INFO(139699011319616)2024-11-05 14:16:16,399:109 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:16,400:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S140_1_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:16,419:finished processing file
+INFO(139699011319616)2024-11-05 14:16:16,419:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:16,419:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L1S57_5_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:17,545:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S57_5_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:17,555:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S57_5_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:17,923:total sequences 473, passing sequences 473, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:17,923:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S57_5_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:22,375:deblurring 473 sequences
+INFO(139699011319616)2024-11-05 14:16:22,438:118 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:22,438:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S57_5_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:22,464:finished processing file
+INFO(139699011319616)2024-11-05 14:16:22,465:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:22,465:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L2S222_11_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:22,953:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S222_11_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:22,960:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S222_11_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:23,324:total sequences 327, passing sequences 327, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:23,324:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S222_11_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:25,539:deblurring 327 sequences
+INFO(139699011319616)2024-11-05 14:16:25,637:288 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:25,639:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S222_11_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:25,678:finished processing file
+INFO(139699011319616)2024-11-05 14:16:25,678:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:25,678:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L6S20_31_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:26,562:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S20_31_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:26,569:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S20_31_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:26,926:total sequences 282, passing sequences 282, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:26,926:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S20_31_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:28,668:deblurring 282 sequences
+INFO(139699011319616)2024-11-05 14:16:28,688:67 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:28,688:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L6S20_31_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:28,701:finished processing file
+INFO(139699011319616)2024-11-05 14:16:28,701:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:28,701:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L2S175_9_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:29,316:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S175_9_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:29,323:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S175_9_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:29,699:total sequences 281, passing sequences 281, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:29,699:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S175_9_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:31,040:deblurring 281 sequences
+INFO(139699011319616)2024-11-05 14:16:31,092:178 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:31,093:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S175_9_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:31,117:finished processing file
+INFO(139699011319616)2024-11-05 14:16:31,118:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:31,118:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L2S357_14_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:31,460:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S357_14_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:31,466:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S357_14_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:31,831:total sequences 149, passing sequences 149, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:31,831:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S357_14_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:34,082:deblurring 149 sequences
+INFO(139699011319616)2024-11-05 14:16:34,095:87 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:34,096:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S357_14_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:34,109:finished processing file
+INFO(139699011319616)2024-11-05 14:16:34,110:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:34,110:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L5S104_25_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:34,405:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S104_25_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:34,410:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S104_25_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:34,743:total sequences 80, passing sequences 80, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:34,743:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S104_25_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:35,618:deblurring 80 sequences
+INFO(139699011319616)2024-11-05 14:16:35,622:38 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:35,622:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S104_25_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:35,632:finished processing file
+INFO(139699011319616)2024-11-05 14:16:35,633:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:35,633:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L2S240_12_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:36,399:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S240_12_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:36,407:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S240_12_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:36,752:total sequences 253, passing sequences 253, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:36,752:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S240_12_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:37,828:deblurring 253 sequences
+INFO(139699011319616)2024-11-05 14:16:37,852:78 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:37,852:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S240_12_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:37,866:finished processing file
+INFO(139699011319616)2024-11-05 14:16:37,866:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:37,866:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L2S204_10_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:38,336:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S204_10_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:38,342:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S204_10_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:38,692:total sequences 236, passing sequences 236, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:38,692:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S204_10_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:39,771:deblurring 236 sequences
+INFO(139699011319616)2024-11-05 14:16:39,806:152 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:39,806:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S204_10_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:39,826:finished processing file
+INFO(139699011319616)2024-11-05 14:16:39,827:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:39,827:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L1S76_6_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:40,811:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S76_6_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:40,819:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S76_6_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:41,200:total sequences 441, passing sequences 441, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:41,200:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S76_6_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:45,132:deblurring 441 sequences
+INFO(139699011319616)2024-11-05 14:16:45,208:107 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:45,208:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S76_6_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:45,230:finished processing file
+INFO(139699011319616)2024-11-05 14:16:45,230:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:45,230:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L1S281_4_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:46,230:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S281_4_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:46,240:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S281_4_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:46,649:total sequences 416, passing sequences 416, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:46,649:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S281_4_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:49,569:deblurring 416 sequences
+INFO(139699011319616)2024-11-05 14:16:49,665:143 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:49,667:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L1S281_4_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:49,702:finished processing file
+INFO(139699011319616)2024-11-05 14:16:49,703:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:49,703:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L2S309_13_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:49,962:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S309_13_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:49,968:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S309_13_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:50,387:total sequences 124, passing sequences 124, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:50,387:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S309_13_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:52,336:deblurring 124 sequences
+INFO(139699011319616)2024-11-05 14:16:52,350:99 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:52,351:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L2S309_13_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:52,367:finished processing file
+INFO(139699011319616)2024-11-05 14:16:52,367:--------------------------------------------------------
+INFO(139699011319616)2024-11-05 14:16:52,367:launch_workflow for file /tmp/qiime2/lulu/data/2fb6e809-3f19-481f-a387-c307404e835e/data/L5S155_26_L001_R1_001.fastq.gz
+INFO(139699011319616)2024-11-05 14:16:52,668:dereplicate seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S155_26_L001_R1_001.fastq.gz.trim
+INFO(139699011319616)2024-11-05 14:16:52,674:remove_artifacts_seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S155_26_L001_R1_001.fastq.gz.trim.derep
+INFO(139699011319616)2024-11-05 14:16:53,044:total sequences 67, passing sequences 67, failing sequences 0
+INFO(139699011319616)2024-11-05 14:16:53,044:multiple_sequence_alignment seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S155_26_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139699011319616)2024-11-05 14:16:53,632:deblurring 67 sequences
+INFO(139699011319616)2024-11-05 14:16:53,634:25 unique sequences left following deblurring
+INFO(139699011319616)2024-11-05 14:16:53,635:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpcc3msvj0/deblur_working_dir/L5S155_26_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpcc3msvj0/deblur_working_dir
+INFO(139699011319616)2024-11-05 14:16:53,643:finished processing file
+INFO(139699011319616)2024-11-05 14:16:53,643:finished processing per sample fasta files
+INFO(139699011319616)2024-11-05 14:16:53,644:create_otu_table for 34 samples, into output table /tmp/tmpcc3msvj0/all.biom
+INFO(139699011319616)2024-11-05 14:16:53,754:for output biom table loaded 34 samples, 1326 unique sequences
+INFO(139699011319616)2024-11-05 14:16:53,756:keeping 488 (out of 1326 sequences) with >=10 reads
+INFO(139699011319616)2024-11-05 14:16:53,775:saved to biom file /tmp/tmpcc3msvj0/all.biom
+INFO(139699011319616)2024-11-05 14:16:53,775:saved sequence fasta file to /tmp/tmpcc3msvj0/all.seqs.fa
+INFO(139699011319616)2024-11-05 14:16:53,776:getting 16s sequences from the biom table
+INFO(139699011319616)2024-11-05 14:16:53,776:remove_artifacts_seqs file /tmp/tmpcc3msvj0/all.seqs.fa
+INFO(139699011319616)2024-11-05 14:16:55,531:total sequences 488, passing sequences 485, failing sequences 3
+WARNING(139699011319616)2024-11-05 14:16:55,541:removed 25 samples with reads per sample<1
+INFO(139699011319616)2024-11-05 14:16:55,545:wrote artifact only filtered biom table to /tmp/tmpcc3msvj0/reference-non-hit.biom
+INFO(139699011319616)2024-11-05 14:16:55,545:saved biom table sequences to fasta file /tmp/tmpcc3msvj0/reference-non-hit.seqs.fa
+INFO(139699011319616)2024-11-05 14:16:55,550:wrote 16s filtered biom table to /tmp/tmpcc3msvj0/reference-hit.biom
+INFO(139699011319616)2024-11-05 14:16:55,551:saved biom table sequences to fasta file /tmp/tmpcc3msvj0/reference-hit.seqs.fa
+INFO(139699011319616)2024-11-05 14:16:55,551:Keeping temp files
+INFO(139699011319616)2024-11-05 14:16:55,551:deblur workflow finished
+INFO(139699011319616)2024-11-05 14:16:55,551:output saved to /tmp/tmpcc3msvj0/all.biom
+INFO(139699011319616)2024-11-05 14:16:55,551:------------------
